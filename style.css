@@ -19,13 +19,25 @@ body {
     background: white;
 }
 
+.instrucs {
+    padding-bottom: 10px;
+}
+
 .flex-outer {
     display: flex;
-    padding: 0 0 30px;
+
 }
+
 .flex-inner {
     flex: 0 0 50%;
+    padding-bottom: 30px;
 }
+
+.flex-inner:first-child {
+    flex-shrink: 1;
+    padding-right: 30px;
+}
+
 .flex-inner label {
     display: block;
 }
@@ -33,7 +45,8 @@ body {
 input {
     margin-top: 15px;
     padding: 10px;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
 }
 
 select {
@@ -42,6 +55,8 @@ select {
     margin-top: 15px;
     border-radius: 0;
     -webkit-appearance: none;
+    max-width: 322px;
+    width: 100%;
 }
 
 span {
@@ -55,4 +70,23 @@ span a {
     color: lightcoral;
     margin-bottom: 10px;
     display: inline-block;
+}
+
+@media all and (max-width: 767px) {
+    .flex-outer {
+        flex-wrap: wrap;
+    }
+    .flex-inner {
+        flex: 1 1 100%;
+    }
+    .flex-inner:first-child {
+        padding-right: 0;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .wrapper {
+        margin: 20px;
+        padding: 20px;
+    }
 }

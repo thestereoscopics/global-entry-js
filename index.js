@@ -1,9 +1,9 @@
 var settings = {
     "locationID": 7960,
     "halifax_id_for_testing": 5031,
-    "notify_me_if_appt_is_before_date": "May 14, 2020",
+    "notify_me_if_appt_is_before_date": "",
     "number_of_appts_to_show": 6,
-    "ecAddress": "7000 PDX AIRPORT Room T3352 Portland OR 97218 US",
+    "ecAddress": "",
 }
 
 let timeleft = 9;
@@ -53,7 +53,7 @@ checkForAppt = () => {
 
                 main.innerHTML = appts;
 
-                if (new Date(data[0].startTimestamp) < new Date(settings.notify_me_if_appt_is_before_date)) {
+                if (new Date(data[0].startTimestamp) < new Date(settings.notify_me_if_appt_is_before_date) && settings.notify_me_if_appt_is_before_date !== '') {
                     const audio = new Audio('global-entry-here-we-come.wav');
                     audio.play();
                 }
