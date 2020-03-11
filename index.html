@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <h1>Global Entry Reservation Finder</h1>
-        <p class="instrucs">Below there are two inputs. Select a location to see appoints for that enrollment center. Use the Date field if you want audio to play if an appointment comes available before the date you type in.
+        <p class="instrucs">Below there are two inputs. Select a location to see appoints for that enrollment center. Use the Date field if you want a SONG OF VICTORY to play if an appointment comes available before the date you type in.
         </p>
         <div class="flex-outer">
             <div class="flex-inner">
