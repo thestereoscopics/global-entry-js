@@ -1,7 +1,7 @@
 # global-entry-js
 pings global entry looking for appts
 
-`
+```
 ├── /public
 │     ├──/css
 │     │     └── /styles
@@ -16,4 +16,4 @@ pings global entry looking for appts
 │           └── sortTable.js
 ├── package.json
 └── README.md
-`
+```
